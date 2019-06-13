@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz');
+* {
+	box-sizing: border-box;
+}
+
+
+.logo__sigsa {
+    position: relative;
+	display: flex;
+	max-width: 60%;
+	margin-top: 5px;
+   
+	transition: all 1.4s;
+    
+}
+.logo__img {
+	display: block;
+	max-width: 50%;
+	background: #d91111;
+	top: 200px;
+}
+.banner__img {
+	display: block;
+	width: 100%;
+	background: #454141;
+}
+.contenedor{
+	width: 99%;
+	margin: auto;
+    
+}
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	background: rgb(235, 235, 235);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1.5px;
+}
+
+/*********estilos del header*********/
+
+.header {
+	position: relative;
+	top: 60px;
+	height: 60px;
+	z-index: 200;
+	transition: all 1.4s;
+}
+.fixed {
+	position: fixed;
+	background: rgba(34, 34, 34, 0.77);
+	height: 60px;
+	width: 100%;
+	top: 0;
+	
+}
+.sigsa-fixed{
+	max-width: 25%;
+	
+}
+.header .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+.logo,
+.icon-menu {
+	margin: 5px;
+}
+.icon-menu {
+	margin: 5px;
+}
+.icon-menu {
+	display: block;
+	width: 50px;
+	height: 40px;
+	font-size: 30px;
+	background: rgb(255, 49, 0);
+	color: #fff;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+/*********Estilos del menu********/
+
+.nav {
+	position: absolute;
+	top: 50px;
+	left: -100%;
+	width: 100%;
+	transition: all 0.8s;
+}
+.menu {
+
+	top: 50px;
+ 
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.menu__link {
+	font-size: 25px;
+	display: block;
+	padding: 15px;
+	background: #FBA919;
+	text-decoration: none;
+	color: #fff;
+	
+}
+.menu__link:hover,
+.select {
+	background: rgb(255, 49, 0);
+	color: antiquewhite;
+	transition: all 1s;
+}
+.mostrar {
+	left: 0%;
+}
+
+/*********Estilos del baner*********/
+
+.banner {
+	height: 70%;
+	position: relative;
+	z-index: 1;
+}
+.banner .contenedor {
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	width: 100%;
+	transform:translateX(-150%) translateY(-50%);
+	color: aliceblue;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.26);
+	width: 100%;
+    padding: 15px;
+}
+
+
+.banner__txt {
+	display: none;
+}
+
+
+.info__img {
+	display: block;
+	max-width: 100%;
+	border-radius: 5px;
+}
+.giratec{
+	position: relative;
+	max-width: 40%;
+	top: 90px;
+}
+
+/*********Estilos del footer*********/
+#listaTabla{
+  top: 82px;
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    margin-bottom: 40px;
+   
+}
+.ocultar{
+ display: none;
+}
+.footer {
+	position: relative;
+	background: #101010;
+	color: #ffffff;
+	text-align: center;
+	height: 300px;
+    top: 60px;
+	padding-top: 30px;
+}
+.footer .social [class^="icon-"] {
+	display: inline-block;
+	color: rgb(69, 69, 69);
+	text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	background: #ffffff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+	margin-right: 10px;
+	z-index: 1;
+}
+.icon-trash-o{
+    font-size: 25px;
+}
+.icon-editar{
+  font-size: 25px;  
+}
+.icon-compras{
+    padding-top: 6px;
+    font-size: 49px; 
+}
+#pedidosR{
+    position: relative;
+    cursor: pointer;
+    left: -37px;
+    top: -3px;
+    z-index: 1000;
+    color: #3c3c3c;
+}
+
+/*********Estilos responsive*********/
+@media (min-width:180px) {
+	.banner {
+	height: 30%;
+	}
+	.banner .contenedor {
+	top: 180px;
+	}
+	#scrolling{
+		height: 85%;
+	}
+	.class_li{
+		height:60%;
+	}
+}
+
+@media (min-width:480px) {
+	.banner {
+	height: 70%;
+	}
+	.banner .contenedor {
+	top: 300px;
+	}
+	#scrolling{
+		height: 85%
+	}
+	.class_li{
+		height:60%;
+	}
+	.giratec{
+	
+	max-width: 20%;
+	top: 100px;
+    }
+	.logo {
+		font-size: 30px;
+	}
+	.banner__titulo {
+		font-size: 30px;
+		margin: 5px 0;
+	}
+	.banner__txt {
+		display: block;
+		font-size: 18px;
+		margin: 7px 0;
+	}
+	.info, .platillos {
+		display: flex;
+		justify-content: space-between;
+		margin-top: -90px;
+	}
+	.info__columna {
+		width: 32%;
+	}
+	.info__titulo {
+		font-size: 30px;
+		margin: 5px 0;
+	}
+	.section__titulo {
+		width: 100%;
+	}
+	.platillos {
+		flex-wrap: wrap;
+		margin-top: 0;
+	}
+	.cursos__columna {
+		width: 48%;
+	}
+}
+@media (min-width:1024px) {
+	#scrolling{
+		height: 90%
+	}
+	
+	.giratec{
+	
+	max-width: 15%;
+	top: 120px;
+    }
+	.contenedor{
+		width: 1000px
+	}
+	.nav {
+		position: static;
+		width: auto;
+	}
+	.menu {
+		display: flex;
+	}
+	.icon-menu {
+		display: none;
+	}
+	.menu__link {
+		background: none;
+		font-size: 20px;
+	}
+	.select {
+		color: #ffffff;
+		background: #ff5e5e;
+	}
+	.banner__titulo{
+		font-size: 60px;
+	}
+	.banner__txt{
+		font-size: 25px;
+	}
+	.info__titulo {
+		font-size: 40px;
+		text-align: center;
+    }
+	
+}
+@media (min-width:1150px) {
+	.class_li{
+		height:70%;
+		background: #fc7676;
+	}
+	#scrolling{
+		height: 90%
+	}
+}
+@media (min-width:1650px) {
+	.class_li{
+		height:80%;
+	}
+	#scrolling{
+		height: 100%
+	}
+    
+}

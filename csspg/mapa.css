@@ -1,0 +1,64 @@
+#boton{
+	padding: 0px;
+	margin-top: 0px;
+	height: 50px;
+	width: 130px;
+	position: relative;
+	z-index: 10;
+	top: 130px;
+	cursor: pointer;
+	transform: translateX(50%) translateY(50%);
+	transition: all 1s;
+	color: rgb(255, 255, 255);
+	background:rgb(108, 168, 227);
+    border: solid 0px;
+	font-size: 18px;
+	
+}
+#boton:hover {
+	box-shadow: -7px 10px 7px rgba(100, 100, 100, 0.51);
+	background:rgb(107, 183, 255);
+}
+#map {
+    position: relative;
+      	
+      	height: 80%;
+      }
+      #contenedor-infoMarker {
+      	display: flex;
+      	flex-wrap: wrap;
+      	width: auto;
+      	height: auto;
+      }
+      #info {
+      	width: 100%;
+      }
+      #info a {
+      	text-decoration: none;
+      	display: flex;
+      	text-align: center;
+      }
+      #info h1 {
+      	text-align: center;
+      }
+      #infoMarker {
+      	max-width: 100%;
+      	max-height: 100%;
+      }
+      #cont-img {
+      	display: block;
+      	padding-right: 0px;
+      	padding-left: 0px;
+      }
+      #contenedor-infoMarker p {
+      	font-size: 16px;
+      	color: #000000;
+      }
+      #cliente {
+      	max-width: 100%;
+      }
+      #conte-cliente {
+      	position: relative;
+      	width: 100px;
+      	height: 100px;
+      }

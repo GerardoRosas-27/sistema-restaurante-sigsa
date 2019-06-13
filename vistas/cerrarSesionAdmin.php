@@ -1,0 +1,13 @@
+<?php
+session_start();
+ $iniciadoU=$_SESSION['usuario'];
+    $contra=$_SESSION['contra'];
+if($iniciadoU==null||$iniciadoU==''){
+  header("Location:../sesion.html");
+}else{
+    //session_destroy();
+    $_SESSION['usuario']="";
+    $_SESSION['contra']="";
+    header("Location:../sesion.html");
+}
+?>
